@@ -13,8 +13,11 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Training Manager</name>
 	<description>Training Manager</description>
+
 	<properties>
-		<java.version>17</java.version>
+		<java.version>17</java.version> <!-- TODO: openjdk17 -->
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 	</properties>
 
 	<profiles>
