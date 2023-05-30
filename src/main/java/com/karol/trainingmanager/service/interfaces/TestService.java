@@ -8,7 +8,7 @@ public interface TestService {
 
     Long upload(String name);
 
-    List <TestEntity> getAll ();
+    List<TestEntity> getAll();
 
-    TestEntity getById (Long id);
+    TestEntity getById(Long id);
 }
