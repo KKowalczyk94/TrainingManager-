@@ -1,8 +1,8 @@
-package com.karol.trainingmanager.service.impl;
+package com.karol.trainingmanager.services.test.impl;
 
 import com.karol.trainingmanager.model.entities.TestEntity;
-import com.karol.trainingmanager.model.repository.TestRepositoryApi;
-import com.karol.trainingmanager.service.interfaces.TestService;
+import com.karol.trainingmanager.model.repository.test.TestRepositoryApi;
+import com.karol.trainingmanager.services.test.TestService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

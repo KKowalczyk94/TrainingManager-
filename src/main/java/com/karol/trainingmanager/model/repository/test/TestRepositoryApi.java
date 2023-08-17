@@ -1,4 +1,4 @@
-package com.karol.trainingmanager.model.repository;
+package com.karol.trainingmanager.model.repository.test;
 
 import com.karol.trainingmanager.model.entities.TestEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
