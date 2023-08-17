@@ -1,4 +1,4 @@
-package com.karol.trainingmanager.controller.interfaces;
+package com.karol.trainingmanager.controllers.test;
 
 import com.karol.trainingmanager.model.entities.TestEntity;
 import org.springframework.http.MediaType;

@@ -1,4 +1,4 @@
-package com.karol.trainingmanager.service.interfaces;
+package com.karol.trainingmanager.services.test;
 
 import com.karol.trainingmanager.model.entities.TestEntity;
 

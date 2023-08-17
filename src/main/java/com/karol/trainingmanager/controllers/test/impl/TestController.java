@@ -1,8 +1,8 @@
-package com.karol.trainingmanager.controller.impl;
+package com.karol.trainingmanager.controllers.test.impl;
 
-import com.karol.trainingmanager.controller.interfaces.TestControllerApi;
+import com.karol.trainingmanager.controllers.test.TestControllerApi;
 import com.karol.trainingmanager.model.entities.TestEntity;
-import com.karol.trainingmanager.service.impl.TestServiceImpl;
+import com.karol.trainingmanager.services.test.impl.TestServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
