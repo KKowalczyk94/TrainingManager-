@@ -1,0 +1,83 @@
+#spring.datasource.url                     = jdbc:postgresql://localhost:5432/trainingmanager
+#spring.datasource.driver-class-name       = org.postgresql.Driver
+#spring.datasource.username                = postgres
+#spring.datasource.password                = admin123
+#spring.jpa.database-platform              = org.hibernate.dialect.PostgreSQLDialect
+#spring.jpa.show-sql                       = true
+#spring.jpa.hibernate.ddl-auto             = update
+#
+#server.port = 8888
+#
+#management.server.port                    = 8085
+#management.server.address                 = localhost
+#management.endpoints.web.exposure.include = *
+
+spring:
+#  config:
+#    activate:
+#      on-profile: dev
+  datasource:
+      url: jdbc:postgresql://localhost:5432/trainingmanager
+      username: postgres
+      password: admin123
+      driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+       ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8085
+  address: localhost
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+application:
+  security:
+    jwt:
+      secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+      expiration: 86400000 # a day
+      refresh-token:
+        expiration: 604800000 # 7 days
+
+#DOCKER PROFILE
+#spring.datasource.url                     = jdbc:postgresql://localhost:5433/trainingmanager
+#spring.datasource.driver-class-name       = org.postgresql.Driver
+#spring.datasource.username                = postgres
+#spring.datasource.password                = password
+#spring.jpa.database-platform              = org.hibernate.dialect.PostgreSQLDialect
+#spring.jpa.show-sql                       = true
+#spring.jpa.hibernate.ddl-auto             = update
+#
+#management.server.port                    = 8082
+#management.server.address                 = localhost
+#management.endpoints.web.exposure.include = *
+
+
+#TEST PROFILE
+
+#
+#//TODO create new DB for testing
+#
+#spring.datasource.url                     = jdbc:postgresql://localhost:5432/trainingmanager
+#spring.datasource.driver-class-name       = org.postgresql.Driver
+#spring.datasource.username                = postgres
+#spring.datasource.password                = admin123
+#spring.jpa.database-platform              = org.hibernate.dialect.PostgreSQLDialect
+#spring.jpa.show-sql                       = true
+#spring.jpa.hibernate.ddl-auto             = update
+#
+#server.port = 8888
+#
+#management.server.port                    = 8080
+#management.server.address                 = localhost
+#management.endpoints.web.exposure.include = *
