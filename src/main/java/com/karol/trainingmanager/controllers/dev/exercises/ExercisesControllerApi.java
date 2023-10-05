@@ -9,7 +9,4 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RequestMapping(value = "/v1/exercises/api/", produces = MediaType.APPLICATION_JSON_VALUE)
 public interface ExercisesControllerApi {
-
-    @PostMapping("create/exercise")
-    ResponseEntity<Long> createExercise(@RequestBody Exercise exercise);
 }
