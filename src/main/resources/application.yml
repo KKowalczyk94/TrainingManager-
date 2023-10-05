@@ -48,6 +48,11 @@ application:
       expiration: 86400000 # a day
       refresh-token:
         expiration: 604800000 # 7 days
+app:
+  default:
+      page:
+        number: 1
+        size: 20
 
 #DOCKER PROFILE
 #spring.datasource.url                     = jdbc:postgresql://localhost:5433/trainingmanager
